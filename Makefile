@@ -7,6 +7,7 @@ test:
 
 
 lint:
+	hadolint Dockerfile
 	pylint --disable=R,C dockerproj.py
 
 all: install lint test
